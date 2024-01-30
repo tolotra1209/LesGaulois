@@ -1,11 +1,9 @@
 package personnages;
 
-public class Gaulois extends Personnage {
-	private Gaulois[] gaulois = new Gaulois[50];
-
+public class Gaulois extends Personnage{
+	
 	public Gaulois(String nom, int force) {
-		super("Asterix", 8);
-		// TODO Auto-generated constructor stub
+		super(nom, force);
 	}
 	
 	@Override
@@ -13,4 +11,8 @@ public class Gaulois extends Personnage {
 		return "gaulois ";
 	}
 	
+	public static void main(String[] args) {
+		Gaulois asterix = new Gaulois("Astérix",8);
+		System.out.println(asterix.getNom());
+	}
 }

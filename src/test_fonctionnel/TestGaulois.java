@@ -5,22 +5,22 @@ import personnages.Romain;
 
 public class TestGaulois {
 	public static void main(String[] args) {
-		Gaulois asterix = new Gaulois("Asterix",8);
-		System.out.println(asterix.getNom());
-		asterix.parler("Bonjour � tous ");
 		
-		Romain minus = new Romain("Minus",6);
-		minus.parler("UN GAU... UN GAUGAU... ");
+		Gaulois asterix = new Gaulois("Astérix",8);
+		Romain minus = new Romain ("Minus",6);
 		
-		/*for (int i=0;i<2; i++) {
+		//System.out.println(asterix.getNom());
+		
+		asterix.parler("Bonjour à tous");
+		minus.parler("Un Gau .. Gaugole");
+		
+		/*for (int i = 0; i<2; i++) {
 			minus.recevoirCoup(3);
 		}*/
 		
-		for (int i=0;i<3; i++) {
+		for (int i = 0; i<3; i++) {
 			asterix.frapper(minus);
 			minus.frapper(asterix);
 		}
-		
-		
 	}
 }

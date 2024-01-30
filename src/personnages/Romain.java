@@ -3,8 +3,7 @@ package personnages;
 public class Romain extends Personnage {
 
 	public Romain(String nom, int force) {
-		super("Minus", 6);
-		// TODO Auto-generated constructor stub
+		super(nom, force);
 	}
 	
 	@Override
