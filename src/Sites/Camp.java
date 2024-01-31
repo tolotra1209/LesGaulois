@@ -41,7 +41,10 @@ public class Camp {
 	
 	public void changerCommandant(Soldat soldat) {
 		if(soldat.grade == Grade.CENTURION) {
-			
+			commandant = soldat;
+			commandant.parler("Moi "+ commandant.getNom()+" je prends la direction du camp romain.");
+		}else {
+			soldat.parler("Je ne suis pas suffusament gradé pour prendre la direction du camp romain.");
 		}
 	}
 	
