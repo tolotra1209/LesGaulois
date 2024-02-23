@@ -1,8 +1,8 @@
 package personnages;
 
 abstract class Personnage {
-	private String nom;
-	private int force;
+	protected String nom;
+	protected int force;
 	
 	protected Personnage(String nom, int force){
 		this.nom = nom;
@@ -22,20 +22,24 @@ abstract class Personnage {
 	
 	public void frapper(Personnage adversaire) {
 		if (force > 0) {
-			System.out.println( nom + " envoie un grand coup dans la mâchoire de " + adversaire.getNom() );
+			
+			System.out.println( "Le "+donnerAuteur()+nom + " donne un grand coup de force "+ force/3 + " au "+ adversaire.donnerAuteur()+adversaire.getNom() );
 			adversaire.recevoirCoup(force/3);
 		}
 	}
 	
+
+
 	public void recevoirCoup(int forceCoup) {
 		force = force - forceCoup;
-		if (force > 0) 
+		if (force > 0) { 
 			parler("Aïe");
-		else 
-		{
+		}else {
 			force = 0;
 			parler("J'abandonne");
 		}
 		
 	}
+	
+	
 }

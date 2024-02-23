@@ -7,5 +7,13 @@ public class Soldat extends Romain {
 		super(nom, force);
 		this.grade = grade;
 	}
+	
+	protected String donnerAuteur() {
+		return grade.getNom();
+	}
+	
+	public void equiperArmure(Personnage adversaire,Armure armure) {
+		adversaire.parler("Le "+donnerAuteur()+adversaire.getNom() +" s'équipe avec un "+""+".");
+	}
 
 }
