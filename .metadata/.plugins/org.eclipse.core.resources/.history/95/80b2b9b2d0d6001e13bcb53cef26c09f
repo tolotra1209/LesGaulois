@@ -1,0 +1,18 @@
+package personnages;
+
+public enum Grade {
+	SOLDAT, 
+	TESSERARIUS, 
+	OPTIO,
+	CENTURION,;
+	private String nom;
+	
+	private Grade(String nom) {
+		this.nom=nom;
+	}
+
+	public String getNom() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

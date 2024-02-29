@@ -1,0 +1,24 @@
+package personnages;
+
+public class Gaulois extends Personnage{
+	
+	public Gaulois(String nom, int force) {
+		super(nom, force);
+	}
+	
+	@Override
+	protected String donnerAuteur() {
+		return "gaulois ";
+	}
+	
+	public void recevoirPotion(double potion) {
+		this.puissancePotion = potion;
+		this.force = forceOrigine * (int)puissancePotion;	
+	}
+	
+	public static void main(String[] args) {
+		Gaulois asterix = new Gaulois("Astérix",8);
+		System.out.println(asterix.getNom());
+	}
+	
+}
