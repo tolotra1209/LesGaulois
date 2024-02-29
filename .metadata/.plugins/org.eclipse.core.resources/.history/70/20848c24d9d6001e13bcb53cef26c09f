@@ -1,0 +1,9 @@
+package Bataille;
+
+public interface Bataille {
+	public String decrireContexte();
+	public String choisirCombattant();
+	public String preparerCombat();
+	public String decrireCombat();
+	public String donnerResultat();
+}

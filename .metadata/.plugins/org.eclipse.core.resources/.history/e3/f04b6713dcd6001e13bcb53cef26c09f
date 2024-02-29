@@ -1,0 +1,35 @@
+package Bataille;
+
+public class Embuscade implements IBataille {
+
+	@Override
+	public String decrireContexte() {
+		// TODO Auto-generated method stub
+		return decrireContexte();
+	}
+
+	@Override
+	public String choisirCombattant() {
+		// TODO Auto-generated method stub
+		return choisirCombattant();
+	}
+
+	@Override
+	public String preparerCombat() {
+		// TODO Auto-generated method stub
+		return preparerCombat();
+	}
+
+	@Override
+	public String decrireCombat() {
+		// TODO Auto-generated method stub
+		return decrireCombat();
+	}
+
+	@Override
+	public String donnerResultat() {
+		// TODO Auto-generated method stub
+		return donnerResultat();
+	}
+
+}

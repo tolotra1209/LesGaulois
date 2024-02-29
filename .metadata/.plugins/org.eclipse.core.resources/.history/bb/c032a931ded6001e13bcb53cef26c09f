@@ -1,0 +1,13 @@
+package Bataille;
+
+public class Conteur {
+	private String nom;
+	
+	public String getNom() {
+		return nom;
+	}
+	
+	public Conteur(String nom) {
+		
+	}
+}

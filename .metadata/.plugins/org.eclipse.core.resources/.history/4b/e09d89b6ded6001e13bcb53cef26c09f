@@ -1,0 +1,18 @@
+package Bataille;
+
+public class Conteur {
+	private String nom;
+	
+	public String getNom() {
+		return nom;
+	}
+	
+	public Conteur(String nom) {
+		this.nom=nom;
+	}
+	
+	public void conter() {
+		System.out.println("Je suis "+ getNom()+".");
+		System.out.println();
+	}
+}
